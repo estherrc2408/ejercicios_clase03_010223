@@ -13,25 +13,32 @@ Todos los elementos "em" de clase "especial" en toda la pagina
 { background: #FFCC99; border: 1px solid #FF9900; padding: .1em; }
  Elementos "span" contenidos en .normal
  { font-weight: bold; }
-*/
+*/  div#primero em{
+        background: #bfbf1a; padding: .1em
+    }/*'lorem sem aliquam nulla' debería aparecer subrayado en color salmón y padding .1em ok*/
+
     *{
         font: 1em/1.3 Arial, Helvetica, sans-serif
-    }
+    }/*todas las etiquetas con este formato ok*/
+    
     p{
         color: #555
-    }
+    }/*todos los parrafos en gris ok*/
+    
+    a{
+        color: #CC3300
+    }/*todos los enlaces del texto deberían salir en naranja oscuro ok*/
+    
     div#primero p{
         color: #336699
-    }
-    * a{
-        color: #CC3300
-    }
-    div#primero em{
-        background: #FFFFCC; padding: .1em
-    }
-    * em .especial{
-        background: #FFCC99; border: 1px solid #FF9900; padding: .1em
-    }
-    div#normal span{
+    }/*la primera división debería de aparecer en azul claro ok*/
+    
+    div.normal span{            
         font-weight: bold
-    }
+    }/* magna eu varius luctus, debería aparecer en negrita ok*/
+    
+    em .especial{
+        background: #a7723e; border: 1px solid #FF9900; padding: .1em;
+    }/*'penatibus et magnis' y 'enim id iaculis congue' deberia de aparecer subrayado y con borde nop*/
+    
+    
